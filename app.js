@@ -14,7 +14,7 @@ const log = message => {
 };
 
   client.on(`ready`, member => {
-    client.user.setPresence({game: {name: "with " + client.users.size + " members | Beta 3.4.1" , type: 0}});
+    client.user.setPresence({game: {name: "with " + client.users.size + " members | ch!help" , type: 0}});
 });
 
 client.on("ready", () => {
