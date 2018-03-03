@@ -86,6 +86,7 @@ client.elevation = message => {
 
 client.on("message", message => {
   if (message.author.bot) return;
+if(message.channel.type === "dm") return;
  let authorr = message.guild.members.get(message.author.id)
  let afkrole = message.guild.roles.find("name", "AFK")
 if(authorr.roles.has(afkrole.id)){
@@ -96,6 +97,7 @@ authorr.removeRole(afkrole.id)
 
 client.on("message", message => {
   if (message.author.bot) return;
+if(message.channel.type === "dm") return;
  let afkrole = message.guild.roles.find("name", "AFK")
 let member = message.mentions.members.first();
 if (!member) return;
