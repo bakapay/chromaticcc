@@ -105,4 +105,4 @@ message.channel.send("**" + member.user.username + " is AFK.**")}
 });
 
 
-client.login("NDE5MTMyMzMyNDA3MTI4MDY0.DXrq8w.LMycRHwjOjOyfz_RGmoots9iagA");
+client.login(process.env.BOT_TOKEN);
